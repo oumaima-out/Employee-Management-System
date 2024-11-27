@@ -11,7 +11,7 @@ describe('AdminTemplateComponent', () => {
       declarations: [AdminTemplateComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(AdminTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

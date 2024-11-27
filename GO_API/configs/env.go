@@ -15,10 +15,10 @@ func EnvMongoURI() string {
     
     if err != nil {
         // For testing, return a default local MongoDB URI
-        return "mongodb://localhost:27017"
+        return "mongodb://db:27017"
     }
 
-    uri := os.Getenv("MONGOURI")
+    uri := os.Getenv("MONGO_URI")
     if uri == "" {
         log.Fatal("MONGOURI not set in the .env or .env.test file")
     }

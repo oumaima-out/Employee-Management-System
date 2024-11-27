@@ -11,7 +11,7 @@ describe('RemoveEmployeeComponent', () => {
       declarations: [RemoveEmployeeComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(RemoveEmployeeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

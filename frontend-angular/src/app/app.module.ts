@@ -13,7 +13,6 @@ import {MatList, MatListModule} from "@angular/material/list";
 import {MatMenu, MatMenuModule} from "@angular/material/menu";
 import { HomeComponent } from './features/home/home.component';
 import { LoginComponent } from './features/login/login.component';
-import { EmployeesComponent } from './features/manageEmployee/list-employees/employees.component';
 import {MatCard, MatCardModule} from "@angular/material/card";
 import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
 import {MatInput, MatInputModule} from "@angular/material/input";
@@ -32,6 +31,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { EditEmployeeComponent } from './features/manageEmployee/edit-employee/edit-employee.component';
 import { RemoveEmployeeComponent } from './features/manageEmployee/remove-employee/remove-employee.component';
+import { EmployeesComponent } from './features/manageEmployee/list-employees/list-employees.component';
 
 @NgModule({
   declarations: [

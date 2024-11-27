@@ -13,8 +13,8 @@ import { RemoveEmployeeComponent } from '../remove-employee/remove-employee.comp
 
 @Component({
   selector: 'app-employees',
-  templateUrl: './employees.component.html',
-  styleUrls: ['./employees.component.css']
+  templateUrl: './list-employees.component.html',
+  styleUrls: ['./list-employees.component.css']
 })
 
 export class EmployeesComponent implements OnInit, AfterViewInit {

@@ -1,27 +1,28 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="myDrawer.toggle()">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span style="flex: auto"></span>
-  <button mat-raised-button mat-button *ngIf="authService.isAuthenticated" style="margin-right:10px">
-     Bonjour {{authService.username}}
-  </button>
-  <button mat-raised-button color="accent" (click)="logout()">Logout</button>
-</mat-toolbar>
-<mat-drawer-container>
- <mat-drawer #myDrawer position="start" mode="side" opened="true">
-   <mat-list>
-    <mat-list-item>
-      <button mat-button routerLink="/admin/home" routerLinkActive="active-link">Home</button>
-    </mat-list-item>
-     <mat-list-item>
-       <button mat-button routerLink="/admin/employees" routerLinkActive="active-link">Employees</button>
-     </mat-list-item>
-   </mat-list>
- </mat-drawer>
-  <mat-drawer-content>
-    <div style="height: 800px">
-      <router-outlet></router-outlet>
-    </div>
-  </mat-drawer-content>
-</mat-drawer-container>
+    <button mat-icon-button (click)="myDrawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span style="flex: auto"></span>
+    <button mat-raised-button mat-button *ngIf="authService.isAuthenticated" style="margin-right:10px">
+       Bonjour {{authService.username}}
+    </button>
+    <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+  </mat-toolbar>
+  <mat-drawer-container>
+   <mat-drawer #myDrawer position="start" mode="side" opened="true">
+     <mat-list>
+      <mat-list-item>
+        <button mat-button routerLink="/admin/home" routerLinkActive="active-link">Home</button>
+      </mat-list-item>
+       <mat-list-item>
+         <button mat-button routerLink="/admin/employees" routerLinkActive="active-link">Employees</button>
+       </mat-list-item>
+     </mat-list>
+   </mat-drawer>
+    <mat-drawer-content>
+      <div style="height: 800px">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
